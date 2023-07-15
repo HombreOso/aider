@@ -8,7 +8,7 @@ import openai
 
 from aider import __version__, models
 from aider.coders import Coder
-from aider.io import InputOutput
+from aider.io_aider import InputOutput
 
 
 def get_git_root():

@@ -11,7 +11,7 @@ import requests
 from aider import models
 from aider.coders import Coder
 from aider.dump import dump  # noqa: F401
-from aider.io import InputOutput
+from aider.io_aider import InputOutput
 
 
 class TestCoder(unittest.TestCase):

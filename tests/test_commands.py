@@ -11,7 +11,7 @@ from aider import models
 from aider.coders import Coder
 from aider.commands import Commands
 from aider.dump import dump  # noqa: F401
-from aider.io import InputOutput
+from aider.io_aider import InputOutput
 
 
 class TestCommands(TestCase):

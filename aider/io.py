@@ -243,6 +243,12 @@ class InputOutput:
         self.append_chat_history(hist)
 
     def confirm_ask(self, question, default="y"):
+        # -----------------------------------------
+        ## return always True - to avoid intermediate asking
+        return True
+        # -----------------------------------------
+
+
         self.num_user_asks += 1
 
         if self.yes is True:
@@ -262,6 +268,10 @@ class InputOutput:
         return res.strip().lower().startswith("y")
 
     def prompt_ask(self, question, default=None):
+        # -----------------------------------------
+        ## return always "yes" - to avoid intermediate asking
+        return "yes"
+        # -----------------------------------------
         self.num_user_asks += 1
 
         if self.yes is True:

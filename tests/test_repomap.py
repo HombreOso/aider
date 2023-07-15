@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from aider.io import InputOutput
+from aider.io_aider import InputOutput
 from aider.repomap import RepoMap
 
 

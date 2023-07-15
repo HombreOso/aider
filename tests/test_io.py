@@ -2,7 +2,7 @@ import os
 import unittest
 from unittest.mock import patch
 
-from aider.io import AutoCompleter, InputOutput
+from aider.io_aider import AutoCompleter, InputOutput
 
 
 class TestInputOutput(unittest.TestCase):
