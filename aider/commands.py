@@ -8,9 +8,27 @@ import git
 import tiktoken
 from prompt_toolkit.completion import Completion
 
-from aider import prompts
 
-from .dump import dump  # noqa: F401
+# ------------------------------
+## temporary make aider a package not a library
+## after developing needed functionality -> package it again and publish to PyPI
+## do not forget to attribute the original library aider from Paul Gauthier
+# ------------------------------
+
+# ------------------------------
+## temporary commented out
+# from aider import prompts
+# ------------------------------
+
+# ------------------------------
+## temporary added
+import prompts
+# ------------------------------
+
+# ------------------------------
+## temporary commented out
+# from ..dump import dump  # noqa: F401
+# ------------------------------
 
 
 class Commands:

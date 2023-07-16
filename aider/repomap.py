@@ -15,9 +15,28 @@ from pygments.lexers import guess_lexer_for_filename
 from pygments.token import Token
 from pygments.util import ClassNotFound
 
-from aider import models
 
-from .dump import dump  # noqa: F402
+# ------------------------------
+## temporary make aider a package not a library
+## after developing needed functionality -> package it again and publish to PyPI
+## do not forget to attribute the original library aider from Paul Gauthier
+# ------------------------------
+
+
+## temporary commented out
+# from aider import models
+# ------------------------------
+
+
+# ------------------------------
+## temporary added
+import models
+# ------------------------------
+
+
+## temporary commented out
+# from ..dump import dump  # noqa: F402
+# ------------------------------
 
 
 def to_tree(tags):
@@ -448,5 +467,10 @@ if __name__ == "__main__":
     rm = RepoMap(root=root)
     repo_map = rm.get_ranked_tags_map(chat_fnames, other_fnames)
 
-    dump(len(repo_map))
+    # ------------------------------
+    ## temporary commented out
+    # dump(len(repo_map))
+    # ------------------------------
+    
+    
     print(repo_map)

@@ -8,8 +8,10 @@ from unittest.mock import MagicMock, patch
 from aider import models
 from aider.coders import Coder
 from aider.coders.wholefile_coder import WholeFileCoder
-from aider.dump import dump  # noqa: F401
-from aider.io_aider import InputOutput
+## temporary commented out
+# from aider.dump import dump  # noqa: F401
+# ------------------------------ 
+from aider.io import InputOutput
 
 
 class TestWholeFileCoder(unittest.TestCase):

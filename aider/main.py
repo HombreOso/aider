@@ -6,9 +6,45 @@ import configargparse
 import git
 import openai
 
-from aider import __version__, models
-from aider.coders import Coder
-from aider.io_aider import InputOutput
+
+# ------------------------------
+## temporary make aider a package not a library
+## after developing needed functionality -> package it again and publish to PyPI
+## do not forget to attribute the original library aider from Paul Gauthier
+# ------------------------------
+
+# ------------------------------
+## temporary commented out
+# from aider import __version__, models
+# ------------------------------
+
+
+# ------------------------------
+## temporary added
+__version__ = "0.0.1_dev"
+import models
+# ------------------------------
+
+
+# ------------------------------
+## temporary make aider a package not a library
+## after developing needed functionality -> package it again and publish to PyPI
+## do not forget to attribute the original library aider from Paul Gauthier
+# ------------------------------
+
+
+## temporary commented out
+# from aider.coders import Coder
+# from aider.io import InputOutput
+# ------------------------------
+
+
+# ------------------------------
+## temporary added
+from coders import Coder
+from io_aider import InputOutput
+# ------------------------------
+
 
 
 def get_git_root():

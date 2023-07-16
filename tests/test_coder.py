@@ -10,8 +10,10 @@ import requests
 
 from aider import models
 from aider.coders import Coder
-from aider.dump import dump  # noqa: F401
-from aider.io_aider import InputOutput
+## temporary commented out
+# from aider.dump import dump  # noqa: F401
+# ------------------------------ 
+from aider.io import InputOutput
 
 
 class TestCoder(unittest.TestCase):

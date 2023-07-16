@@ -9,7 +9,9 @@ from unittest.mock import patch
 from prompt_toolkit.input import DummyInput
 from prompt_toolkit.output import DummyOutput
 
-from aider.dump import dump  # noqa: F401
+## temporary commented out
+# from aider.dump import dump  # noqa: F401
+# ------------------------------ 
 from aider.main import main
 
 
