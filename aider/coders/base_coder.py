@@ -451,12 +451,19 @@ class Coder:
         self.cur_messages = []
 
     def run_loop(self):
-        inp = self.io.get_input(
-            self.root,
-            self.get_inchat_relative_files(),
-            self.get_addable_relative_files(),
-            self.commands,
-        )
+        try:
+            inp = self.io.get_input(
+                self.root,
+                self.get_inchat_relative_files(),
+                self.get_addable_relative_files(),
+                self.commands,
+            )
+        except UnicodeEncodeError:
+            print("self.root: ", self.root),
+            print("self.get_inchat_relative_files(): ", self.get_inchat_relative_files())
+            print("self.get_addable_relative_files(): ",self.get_addable_relative_files())
+            print("self.commands", self.commands)
+
 
         self.num_control_c = 0
 
